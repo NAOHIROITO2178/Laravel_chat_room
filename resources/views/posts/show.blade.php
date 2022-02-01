@@ -6,7 +6,7 @@
     <div class="back-link">
         &laquo; <a href="{{ route('posts.index') }}">戻る</a>
     </div>
-    <p>ジャンル::<span id="spanGenre"></span></p>
+    <p>ジャンル::</p>
     <h1>
        <span>{{ $post->title }}</span>
        <a href="{{ route('posts.edit', $post) }}">[編集する]</a>
