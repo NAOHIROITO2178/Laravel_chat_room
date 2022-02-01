@@ -23,7 +23,7 @@
         </select>
         <input type="button" value="選択" onclick="clickGenre()"/>
 
-        <script>
+        <script type="text/javascript">
         function clickGenre(){
             const str = document.getElementById("Genre").value;
 
@@ -50,7 +50,7 @@
         @error('body')
          <div class="error">{{ $message }}</div>
         @enderror
-        
+
         </div>
         <div class="form-button">
         <button>投稿</button>
