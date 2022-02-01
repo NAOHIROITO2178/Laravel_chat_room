@@ -10,7 +10,7 @@
     <h1>内容変更</h1>
     <p>ジャンル:: <span id="spanGenre"></span></p>
 
-        <select id="Genre">
+        <select name="GenreCategoty">
             <option value="勉強">勉強</option>
             <option value="部活">部活</option>
             <option value="友達">友達</option>

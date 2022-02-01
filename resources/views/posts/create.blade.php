@@ -8,9 +8,9 @@
     </div>
 
     <h1>お悩み投稿</h1>
-    <p>ジャンル:: <span id="spanGenre"></span></p>
+    <p>ジャンル:: </p>
 
-        <select id="Genre">
+        <select name="GenreCategoty">
             <option value="選択してください">未選択</option>
             <option value="勉強">勉強</option>
             <option value="部活">部活</option>
