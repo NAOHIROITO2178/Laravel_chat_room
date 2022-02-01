@@ -1,0 +1,187 @@
+.back_img{
+    font-family: Arial, sans-serif;
+    background: url(https://userdisk.webry.biglobe.ne.jp/012/472/52/N000/000/002/145027630451442405177_BG0370a_800.jpg) center center / cover no-repeat fixed;
+}
+
+.back_img:before{
+    content: '';
+    background: inherit;
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    -ms-filter: blur(7px);
+    filter: blur(7px);
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+    z-index: -1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.introduction{
+  font-weight: bold;
+  font-size: 20px;
+  color:blue;
+  background-color: aqua;
+}
+
+span{
+    font-family: sans-serif;
+    background-color: green;
+    color:yellow;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container{
+    width: 480px;
+    margin: 40px auto;
+}
+
+h1{
+   border-bottom: 1px solid;
+   font-size: 18px;
+   margin: 16px 0;
+   padding-bottom: 8px;
+   display: flex;
+   align-items: center;
+}
+
+h1 > a{
+    font-size: 16px;
+    font-weight: normal;
+    margin-left:auto;
+}
+
+h2{
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+ol{
+    line-height: 1.6;
+    margin-bottom: 8px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px 24px;
+    max-width: 60%;
+    position: relative;
+}
+
+ol::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    position: absolute;
+  }
+
+  .left-chat ol::before {
+    top: 12px;
+    left: -16px;
+    border-left-color: #fff;
+  }
+
+  .right-chat ol::before {
+    top: 12px;
+    right: -16px;
+    border-right-color: #fff;
+  }
+
+.back-link{
+    font-size: 14px;
+}
+
+p{
+ line-height: 1.6;
+}
+
+.Contents{
+    line-height: 1.6;
+    margin-bottom: 8px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px 24px;
+    max-width: 60%;
+    position: relative;
+}
+
+.Contents::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    position: absolute;
+    top: 12px;
+    left: -16px;
+    border-right-color: #fff;
+}
+
+input,
+textarea{
+    padding: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea{
+    height: 160px;
+}
+
+button{
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.back_todo{
+    font-weight: bold;
+    background-color: aqua;
+}
+
+.form-group{
+    margin-bottom: 16px;
+}
+
+.form-button{
+    text-align: right;
+}
+
+.error{
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.btn{
+   border: none;
+   background: transparent;
+   font-size: 16px;
+   font-weight: normal;
+   color: #15c;
+   cursor: pointer;
+   vertical-align: 1px;
+}
+
+.comment-form{
+   display: flex;
+}
+
+.comment-form > button{
+   margin-left: 8px;
+}
+
+.delete-comment{
+  display: inline-block;
+}
+
+.kaiketu {
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    position: relative;
+  }
