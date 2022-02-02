@@ -8,11 +8,31 @@
     </div>
 
     <h1>お悩み投稿</h1>
-    
+
 
     <form method="post" action="{{ route('posts.store') }}">
        @csrf
        <div class="form-group">
+        <p>ジャンル：<span name = "category">{{ old('category') }}</span></p>
+        <select id = "selectcategory">
+            <option value="勉強">勉強</option>
+            <option value="部活動">部活動</option>
+            <option value="友達">友達</option>
+            <option value="恋愛">恋愛</option>
+            <option value="進路">進路</option>
+            <option value="学校行事">学校行事</option>
+            <option value="趣味">趣味</option>
+            <option value="その他">その他</option>
+        </select>
+        <input type="button" value="選択" onclick="clickGenre()"/>
+
+        <script>
+        function clickGenre(){
+            const str = document.getElementById("selectcategory").value;
+
+            document.getElementByName("category").textContent = str;
+        }
+        </script>
        <label>
            悩み
            <input type="text" name="title" value="{{ old('title') }}">
