@@ -13,7 +13,7 @@
     <form method="post" action="{{ route('posts.store') }}">
        @csrf
        <div class="form-group">
-        <p>ジャンル：<span name = "category">{{ old('category') }}</span></p>
+        <p name = "category">ジャンル：{{ old('category') }}</p>
         <select id = "selectcategory">
             <option value="勉強">勉強</option>
             <option value="部活動">部活動</option>
