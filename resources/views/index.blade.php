@@ -14,7 +14,7 @@
         <ol>
             <a href="{{ route('posts.show', $post) }}">
                 {{ $post->title }}:
-                {{ $post->category }}
+                {{-- //{{ $post->category }} --}}
             </a>
         </ol>
         @empty

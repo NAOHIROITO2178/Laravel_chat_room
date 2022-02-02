@@ -10,7 +10,7 @@
     <h1>内容変更</h1>
     <p>ジャンル:: </p>
 
-        
+
 
     <form method="post" action="{{ route('posts.update', $post) }}">
        @method('PATCH')
@@ -25,6 +25,29 @@
        @enderror
        </div>
        <div class="form-group">
+           {{-- <p name = "category">ジャンル：{{ old('category') }}</p>
+        <select id = "selectcategory">
+            <option value="勉強">勉強</option>
+            <option value="部活動">部活動</option>
+            <option value="友達">友達</option>
+            <option value="恋愛">恋愛</option>
+            <option value="進路">進路</option>
+            <option value="学校行事">学校行事</option>
+            <option value="趣味">趣味</option>
+            <option value="その他">その他</option>
+        </select>
+        <input type="button" value="選択" onclick="clickGenre()"/>
+
+        <script>
+        function clickGenre(){
+            const str = document.getElementById("selectcategory").value;
+
+            document.getElementByName("category").textContent = str;
+        }
+        </script>
+        @error('category')
+         <div class="error">{{ $message }}</div>
+        @enderror --}}
        <label>
            内容
            <textarea name="body">{{ old('body', $post->body) }}</textarea>

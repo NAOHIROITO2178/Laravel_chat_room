@@ -13,7 +13,7 @@
     <form method="post" action="{{ route('posts.store') }}">
        @csrf
        <div class="form-group">
-        <p name = "category">ジャンル：{{ old('category') }}</p>
+        {{-- <p name = "category">ジャンル：{{ old('category') }}</p>
         <select id = "selectcategory">
             <option value="勉強">勉強</option>
             <option value="部活動">部活動</option>
@@ -33,6 +33,9 @@
             document.getElementByName("category").textContent = str;
         }
         </script>
+        @error('category')
+         <div class="error">{{ $message }}</div>
+        @enderror --}}
        <label>
            悩み
            <input type="text" name="title" value="{{ old('title') }}">
@@ -50,6 +53,7 @@
          <div class="error">{{ $message }}</div>
         @enderror
 
+        
         </div>
         <div class="form-button">
         <button>投稿</button>
