@@ -17,6 +17,7 @@ class CommentController extends Controller
       $comment = new Comment();
       $comment->post_id = $post->id;
       $comment->body = $request->body;
+      // $post->image = $request->image;
       $comment->save();
 
       return redirect()

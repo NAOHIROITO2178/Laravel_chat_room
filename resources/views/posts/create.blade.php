@@ -13,6 +13,7 @@
     <form method="post" action="{{ route('posts.store') }}">
        @csrf
        <div class="form-group">
+            {{-- todoリストにあるカテゴリを悩みのジャンルとして表示させる機能を実装予定 --}}
         {{-- <p name = "category">ジャンル：{{ old('category') }}</p>
         <select id = "selectcategory">
             <option value="勉強">勉強</option>
@@ -52,8 +53,13 @@
         @error('body')
          <div class="error">{{ $message }}</div>
         @enderror
-
-        
+        {{-- 画像添付機能も追加予定 --}}
+        {{-- <label>
+        <input id=”image” type=”file” name=”image“>{{ old('image') }}
+        </label>
+        @error('image')
+         <div class="error">{{ $message }}</div>
+        @enderror --}}
         </div>
         <div class="form-button">
         <button>投稿</button>

@@ -32,6 +32,8 @@ class PostController extends Controller
         $post = new Post();
         $post->title = $request->title;
         $post->body = $request->body;
+        // $post->category = $request->category;
+        // $post->image = $request->image;
         $post->save();
 
         return redirect()
@@ -48,6 +50,8 @@ class PostController extends Controller
     {
         $post->title = $request->title;
         $post->body = $request->body;
+        // $post->category = $request->category;
+        // $post->image = $request->image;
         $post->save();
 
         return redirect()
