@@ -34,12 +34,12 @@
                   @method('DELETE')
                   @csrf
                   {{-- 画像添付機能も追加予定 --}}
-                  {{-- <label>
+                  <label>
                     <input id=”image” type=”file” name=”image“>{{ old('image') }}
                     </label>
                     @error('image')
                      <div class="error">{{ $message }}</div>
-                    @enderror --}}
+                    @enderror
                   <button class="btn">[削除]</button>
               </form>
             </ol>

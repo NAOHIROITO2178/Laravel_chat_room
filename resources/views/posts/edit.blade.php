@@ -26,7 +26,7 @@
        </div>
        <div class="form-group">
            {{-- todoリストにあるカテゴリを悩みのジャンルとして表示させる機能を実装予定 --}}
-           {{-- <p name = "category">ジャンル：{{ old('category') }}</p>
+           <p name = "category">ジャンル：{{ old('category') }}</p>
         <select id = "selectcategory">
             <option value="勉強">勉強</option>
             <option value="部活動">部活動</option>
@@ -48,7 +48,7 @@
         </script>
         @error('category')
          <div class="error">{{ $message }}</div>
-        @enderror --}}
+        @enderror
        <label>
            内容
            <textarea name="body">{{ old('body', $post->body) }}</textarea>
@@ -57,12 +57,12 @@
          <div class="error">{{ $message }}</div>
         @enderror
         {{-- 画像添付機能も追加予定 --}}
-        {{-- <label>
+        <label>
             <input id=”image” type=”file” name=”image“>{{ old('image') }}
         </label>
         @error('image')
          <div class="error">{{ $message }}</div>
-        @enderror --}}
+        @enderror
         </div>
         <div class="form-button">
         <button>編集</button>
