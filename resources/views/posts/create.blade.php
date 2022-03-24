@@ -12,31 +12,6 @@
 
     <form method="post" action="{{ route('posts.store') }}">
        @csrf
-       <div class="form-group">
-            {{-- todoリストにあるカテゴリを悩みのジャンルとして表示させる機能を実装予定 --}}
-        <p name = "category">ジャンル：{{ old('category') }}</p>
-        <select id = "selectcategory">
-            <option value="勉強">勉強</option>
-            <option value="部活動">部活動</option>
-            <option value="友達">友達</option>
-            <option value="恋愛">恋愛</option>
-            <option value="進路">進路</option>
-            <option value="学校行事">学校行事</option>
-            <option value="趣味">趣味</option>
-            <option value="その他">その他</option>
-        </select>
-        <input type="button" value="選択" onclick="clickGenre()"/>
-
-        <script>
-        function clickGenre(){
-            const str = document.getElementById("selectcategory").value;
-
-            document.getElementByName("category").textContent = str;
-        }
-        </script>
-        @error('category')
-         <div class="error">{{ $message }}</div>
-        @enderror
        <label>
            悩み
            <input type="text" name="title" value="{{ old('title') }}">
@@ -53,7 +28,6 @@
         @error('body')
          <div class="error">{{ $message }}</div>
         @enderror
-        {{-- 画像添付機能も追加予定 --}}
         <label>
         <input id=”image” type=”file” name=”image“>{{ old('image') }}
         </label>

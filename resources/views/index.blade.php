@@ -13,8 +13,7 @@
         @forelse ($posts as $post)
         <ol>
             <a href="{{ route('posts.show', $post) }}">
-                {{ $post->title }}:
-                {{ $post->category }}
+                {{ $post->title }}
             </a>
         </ol>
         @empty
