@@ -8,8 +8,6 @@
     </div>
 
     <h1>お悩み投稿</h1>
-
-
     <form method="post" action="{{ route('posts.store') }}">
        @csrf
        <label>
@@ -28,13 +26,6 @@
         @error('body')
          <div class="error">{{ $message }}</div>
         @enderror
-        <label>
-        <input id=”image” type=”file” name=”image“>{{ old('image') }}
-        </label>
-        @error('image')
-         <div class="error">{{ $message }}</div>
-        @enderror
-        </div>
         <div class="form-button">
         <button>投稿</button>
         </div>

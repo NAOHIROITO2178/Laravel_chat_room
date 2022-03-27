@@ -8,10 +8,6 @@
     </div>
 
     <h1>内容変更</h1>
-    <p>ジャンル:: </p>
-
-
-
     <form method="post" action="{{ route('posts.update', $post) }}">
        @method('PATCH')
        @csrf
@@ -31,13 +27,6 @@
         @error('body')
          <div class="error">{{ $message }}</div>
         @enderror
-        <label>
-            <input id=”image” type=”file” name=”image“>{{ old('image') }}
-        </label>
-        @error('image')
-         <div class="error">{{ $message }}</div>
-        @enderror
-        </div>
         <div class="form-button">
         <button>編集</button>
         </div>
